@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>Log In</title>
+        <link rel="stylesheet" href="login.css">
+        <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="box-container">
+            <div class="box">
+                <h1 class="heading">Welcome Back</h1>
+                <form action="">
+                    <div class="form-row">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name">
+                        <script>
+                            $(document).ready(function(){
+                                $("#name").click(function(){
+                                    $("#name").css("border","2px solid red");
+                                    $("#email").css("border","2px solid #1DA1F2");
+                                });
+                            });
+                        </script>
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email:</label>
+                        <input type="text" id="email">
+                    </div>
+                    <script>
+                        $(document).ready(function(){
+                            $("#email").click(function(){
+                                $("#email").css("border","2px solid red");
+                                $("#name").css("border","2px solid #1DA1F2");
+                            });
+                            
+                        });
+                    </script>
+                    <fieldset class="radio-form">
+                        <legend class="heading">Gender</legend>
+                        <div class="radio-start">
+                        <input type="radio" id="male" name="gender">
+                        <label for="male" >Male</label>
+                        <input type="radio" id="female" name="gender">
+                        <label for="female" >Female</label>
+                        </div>
+                    </fieldset>
+                    <p class="heading"><input type="checkbox"> I Agree To The Terms and Conditions</p>
+                    
+                </form>
+                <script>
+                    $(document).ready(function(){
+                        $("button").on("click",function(){
+                            $("button").text("Submitted!");
+                        });
+                    });
+                </script>
+                <button class="button">Submit</button>
+                <p class="para">Don't Have an Account Yet ?<span><a href="signUp.html">  Sign Up</a></span></p>
+            </div>
+        </div>
+    </body>
+</html>
