@@ -2,9 +2,13 @@
     <head>
         <title>Sign Up</title>
         <link rel="stylesheet" href="login.css">
+        <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
     </head>
     <body>
-        <div class="page box">
+        <div class="box">
             
                 <form action="" class="form-name">
                     <h1 class="Heading" >Enter Your Details</h1>
@@ -17,18 +21,20 @@
                             $("#first-name").click(function(){
                                 $("#first-name").css("border","2px solid red");
                                 $("#last-name").css("border","2px solid #1DA1F2");
+                                $("#email").css("border","2px solid #1DA1F2");
                             });
                         });
                     </script>
                     </div>
                     <div class="form-row">
                         <label for="last-name">Last Name:</label>
-                    <input type="text" name="last-name" id="last-name">
+                         <input type="text" name="last-name" id="last-name">
                     <script>
                         $(document).ready(function(){
                             $("#last-name").click(function(){
                                 $("#last-name").css("border","2px solid red");
                                 $("#first-name").css("border","2px solid #1DA1F2");
+                                $("#email").css("border","2px solid #1DA1F2");
                             });
                         });
                     </script>
@@ -37,10 +43,23 @@
                         <label for="email">Email ID:</label>
                     <input type="email" id="email">
                     </div>
+                    <script>
+                        $(document).ready(function(){
+                            $("#email").click(function(){
+                                $("#email").css("border","2px solid red");
+                                $("#first-name").css("border","2px solid #1DA1F2");
+                                $("#last-name").css("border","2px solid #1DA1F2");
+                            });
+                        });
+                    </script>
                    </div>
                    
                 </form>
-                
+                <p class="para">Already a Member? <a href="logIn.html">Log In!</a></p>
+                <hr/>
+                <p class="para on">Or</p>
+                <button class="button gbtn">Login Using Google</button><br>
+                <button class="button gbtn">Login Using Facebook</button>
         </div>
     </body>
 </html>

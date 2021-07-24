@@ -69,6 +69,13 @@ button {
     font-family: "Helvetica" , sans-serif;
 }
 
+.gbtn {
+    width: 200px;
+    margin-left: 130px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
 .button:hover{
     background-color: #4266ad;
 }
@@ -96,7 +103,7 @@ input[type='checkbox'] {
     padding: 4px;
 }
 
-input[type='text'] {
+input[type='text'] , input[type="email"] {
     margin: auto;
     border-radius: 20px;
     padding: 4px 20px;
@@ -112,6 +119,10 @@ input[type="text"]:focus {
     outline: none;
 }
 
+input[type="email"]:focus {
+    outline: none;
+}
+
 label {
     margin: auto;   
 }
@@ -119,4 +130,63 @@ label {
 .para {
     text-align: center;
     margin: 25px;
+}
+
+hr{
+    color: #1DA1F2;
+    background-color: #1DA1F2;
+}
+
+.button-link {
+    background-color: #1DA1F2;
+    color: black;
+    width: 75px;
+}
+
+.header-banner {
+    height: 150px;
+    width: 100%;
+    background-color: rgba(29, 29, 27, 0.76);
+    border: 2px solid violet;
+}
+
+.banner-container {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid purple;
+    margin-bottom: 60px;
+    padding: 25px;
+}
+
+.banner-container ul {
+    display: flex;
+    border: 2px solid red;
+}
+
+.banner-container ul li{
+    border: 2px solid blue;
+    margin: 4px;
+}
+
+.page{
+    width: 960px;
+    margin: auto;
+    border: 2px solid rgb(58, 216, 18);
+    height: 350px;
+}
+
+.sidebar{
+    width: 300px;
+    border: 2px solid red;
+    height: 350px;
+}
+
+.flex-box{
+    display: flex;
+    overflow: hidden;
+}
+
+.banner-bottom{
+    border: 2px solid white;
+    height:10px;
 }
