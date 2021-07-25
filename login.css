@@ -198,9 +198,26 @@ hr{
 
 .fas {
     color: rgb(199, 199, 199);
-    margin: 8px;
+    margin-top: 4px;
+    margin-left: 8px;
+    margin-right: 8px;
 }
 
 ul{
     list-style: none;
+}
+
+.search{
+    position: relative;
+
+    margin-top: 30px;
+   margin: auto;
+}
+
+.search input{
+    padding-left: 30px;
+}
+
+.fa-search{
+    position: absolute;
 }
