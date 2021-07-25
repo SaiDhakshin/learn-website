@@ -69,6 +69,12 @@ button {
     font-family: "Helvetica" , sans-serif;
 }
 
+.bbtn{
+    background-color: rgb(255, 255, 255);   
+    padding: 4px;
+    border-radius: 5px;
+}
+
 .gbtn {
     width: 200px;
     margin-left: 130px;
@@ -146,24 +152,24 @@ hr{
 .header-banner {
     height: 150px;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.712);
-    border: 2px solid violet;
+    background-color: rgba(0, 0, 0, 0.973);
+
 }
 
 .banner-container {
     display: flex;
     justify-content: space-between;
-    border: 2px solid purple;
+ 
     padding: 25px;
 }
 
 .banner-container ul {
     display: flex;
-    border: 2px solid red;
+
 }
 
 .banner-container ul li{
-    border: 2px solid blue;
+ 
     margin: 4px;
 }
 
@@ -199,8 +205,15 @@ hr{
 .fas {
     color: rgb(199, 199, 199);
     margin-top: 4px;
-    margin-left: 8px;
-    margin-right: 8px;
+    margin-left: 18px;
+    margin-right: 18px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.fas:hover {
+    background-color: rgba(199, 199, 199, 0.192);
+    
 }
 
 ul{
@@ -215,9 +228,19 @@ ul{
 }
 
 .search input{
-    padding-left: 30px;
+    background-color: rgba(48, 45, 45, 0.651);
+    padding-left: 50px;
+    width: 600px;
+    height: 40px;
+    border: 2px solid #1da0f271;
 }
 
 .fa-search{
     position: absolute;
+    padding-top: 8px;
+}
+
+.search input:hover{
+    background-color: rgba(8, 8, 8, 0.192);
+    border : 2px solid #1DA1F2;
 }
