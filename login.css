@@ -75,6 +75,10 @@ button {
     border-radius: 5px;
 }
 
+.bbtn:hover{
+    background-color: rgba(255, 255, 255, 0.479); 
+}
+
 .gbtn {
     width: 200px;
     margin-left: 130px;
@@ -240,6 +244,8 @@ ul{
     width: 600px;
     height: 40px;
     border: 2px solid #1da0f271;
+    caret-color: #1DA1F2;
+    color: #fff;
 }
 
 .fa-search{
@@ -256,6 +262,11 @@ ul{
     width: 100px;
     height: 90px;
     background-color: white;
-
+    cursor :pointer;
     position: absolute;
+    
+}
+
+.logo:hover {
+    border: 2px solid #1DA1F2;
 }
