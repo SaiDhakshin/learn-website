@@ -153,19 +153,21 @@ hr{
     height: 150px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.973);
-
+    position: fixed;
+    
 }
 
 .banner-container {
     display: flex;
-    justify-content: space-between;
- 
+
     padding: 25px;
 }
 
 .banner-container ul {
     display: flex;
+    justify-content: flex-end;
 
+    margin-left: 90%;
 }
 
 .banner-container ul li{
@@ -188,12 +190,17 @@ hr{
 
 .flex-box{
     display: flex;
-    overflow: hidden;
+    border: 2px solid white;
+    position: relative;
+    top: 200px;
+
 }
 
 .banner-bottom{
     border: 2px solid white;
     height:10px;
+    /* margin-bottom: 40px; */
+
 }
 
 .banner-option {
@@ -243,4 +250,12 @@ ul{
 .search input:hover{
     background-color: rgba(8, 8, 8, 0.192);
     border : 2px solid #1DA1F2;
+}
+
+.logo{
+    width: 100px;
+    height: 90px;
+    background-color: white;
+
+    position: absolute;
 }
