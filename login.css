@@ -190,20 +190,22 @@ hr{
     box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.3);
     background-color: rgb(153, 22, 44);
     border-radius: 5px;
+    margin-bottom: 20px;
 }
 
 .sidebar{
     width: 300px;
     border: 2px solid red;
-    
     background-color: rgb(153, 22, 44);
     border-radius: 5px;
 }
 
 .flex-box{
     display: flex;
+    justify-content: space-between;
     position: relative;
     top: 200px;
+    border: 2px solid #fff;
     background-color: rgb(36, 36, 36);
 }
 
@@ -360,4 +362,30 @@ h2 {
 
 .txt-con:hover {
     border: 2px solid white;
+}
+
+footer {
+    height: 350px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.973);
+    bottom: 0;
+    left: 0;
+    
+}
+
+
+
+
+.page-container{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #fff;
+    margin-left: 100px;
+    margin-bottom: 10px;
+    clear: both;    
+}
+
+.sidebar-container{
+    display: flex;
+    justify-content: flex-end;
 }
