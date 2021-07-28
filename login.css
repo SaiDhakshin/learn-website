@@ -144,6 +144,7 @@ label {
 .para {
     text-align: center;
     margin: 25px;
+    color: #fff;
 }
 
 hr{
@@ -187,20 +188,20 @@ hr{
     width: 960px;
     margin: auto;
     box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.3);
-    height: 350px;
-    background-color: rgb(70, 66, 66);
+    background-color: rgb(153, 22, 44);
+    border-radius: 5px;
 }
 
 .sidebar{
     width: 300px;
     border: 2px solid red;
-    height: 350px;
-    background-color: rgb(70, 66, 66);
+    
+    background-color: rgb(153, 22, 44);
+    border-radius: 5px;
 }
 
 .flex-box{
     display: flex;
-    border: 2px solid white;
     position: relative;
     top: 200px;
     background-color: rgb(36, 36, 36);
@@ -284,21 +285,79 @@ ul{
 }
 
 h2 {
-    color: #fff;
+    color:black;
 }
 
 .grid-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+}
+
+.thumbnail {
+    display: flex;
+    
 }
 
 .thumbnail >li > img{
-    width: 200px;
-    height: 250px;
+    width: 100px;
+    height: 125px;
+    margin: 4px;
+    
+    
+} 
+
+.thumbnail > li {
+    width: 130px;
+    height: 200px;
     padding: 10px;
-    border: 2px solid black;
+    text-align: center;
+    border: 2px solid rgb(153, 22, 44);
     border-radius: 5px;
     background-color: rgb(51, 51, 51);
-    margin: 8px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #fff;
+    justify-content: space-around;
+    
+}
 
-} 
+.thumbnail > li:hover {
+
+    border: 2px solid white;
+    
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar > ul > li{
+    text-align: center;
+    padding: 8px;
+    margin-top: 10px;
+    background-color: rgb(51, 51, 51);
+    color: #fff;
+    border: 2px solid rgb(153, 22, 44); 
+    border-radius:5px;
+}
+
+.sidebar > ul > li:hover {
+    border: 2px solid white;
+}
+
+.txt-con {
+    text-align: center;
+    padding: 8px;
+    margin: 10px auto;
+    background-color: rgb(51, 51, 51);
+    color: #fff;
+    border: 2px solid rgb(153, 22, 44); 
+    border-radius:5px;
+    width: fit-content;
+}
+
+.txt-con:hover {
+    border: 2px solid white;
+}
